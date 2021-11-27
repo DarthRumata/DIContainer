@@ -1,0 +1,16 @@
+PODS:
+  - DIContainer (0.0.1)
+
+DEPENDENCIES:
+  - DIContainer (from `../`)
+
+EXTERNAL SOURCES:
+  DIContainer:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DIContainer: 183322012532b6ce76928483f77fad146cff9ea5
+
+PODFILE CHECKSUM: ee997c083472fbe6e5d60c9e825831d12c76d0cd
+
+COCOAPODS: 1.10.1

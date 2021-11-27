@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BookListCell" rowHeight="98" id="ZBX-KU-KfV" customClass="BookListCell" customModule="DIContainerExample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="98"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZBX-KU-KfV" id="Wul-tQ-KwK">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="98"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bWh-eU-sV0">
+                        <rect key="frame" x="15" y="15" width="370" height="68"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kf5-sV-swn">
+                                <rect key="frame" x="0.0" y="0.0" width="180" height="68"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rzs-Te-qIK">
+                                <rect key="frame" x="190" y="0.0" width="180" height="68"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bWh-eU-sV0" firstAttribute="leading" secondItem="Wul-tQ-KwK" secondAttribute="leading" constant="15" id="JTp-Oi-QW6"/>
+                    <constraint firstAttribute="bottom" secondItem="bWh-eU-sV0" secondAttribute="bottom" constant="15" id="RhB-Hz-gnm"/>
+                    <constraint firstItem="bWh-eU-sV0" firstAttribute="top" secondItem="Wul-tQ-KwK" secondAttribute="top" constant="15" id="bDH-Bs-UYT"/>
+                    <constraint firstAttribute="trailing" secondItem="bWh-eU-sV0" secondAttribute="trailing" constant="15" id="kFf-3c-tII"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="publishedDateLabel" destination="Rzs-Te-qIK" id="T62-zf-X5Z"/>
+                <outlet property="titleLabel" destination="Kf5-sV-swn" id="SH0-R8-PsU"/>
+            </connections>
+            <point key="canvasLocation" x="75.362318840579718" y="-120.53571428571428"/>
+        </tableViewCell>
+    </objects>
+</document>
